@@ -19,7 +19,7 @@ const Rides = () => {
     useEffect(()=>{
         const getCars = async()=>{
             try{
-                const res = await fetch(`http://localhost:3001/car/?brand=${brand}`,{
+                const res = await fetch(`https://car-rental-backend-kappa.vercel.app/car/?brand=${brand}`,{
                     method: "GET",
                 });
                 if(res.ok){
