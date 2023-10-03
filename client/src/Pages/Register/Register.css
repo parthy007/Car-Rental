@@ -1,0 +1,174 @@
+.register{
+    height: 100vh;
+    width: 100vw;
+}
+.registerWrapper{
+    width: 100%;
+    height: 100%;
+    padding: 0 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.registerImgContainer{
+    position: relative;
+    width: 50vw;
+    height: 90vh;
+    animation: move 2s infinite ease alternate;
+}
+@keyframes move {
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+        transform: translateY(0px) scale(1.03);
+    }
+}
+.registerCar{
+    width: 90%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.registerBlob{
+    position: absolute;
+    top: -10vh;
+    right: 11vw;
+    height: 120%;
+    width: 100%;
+    z-index: 1;
+}
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 30%;
+    height: 50%;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.registerTitle{
+    text-align: center;
+    color: rgb(95 85 85);
+}
+.registerInputWrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    justify-content: space-evenly;
+}
+.registerIcon{
+    color: #FF3026;
+    font-size: 1.5vw;
+}
+.registerInputWrapper>input{
+    width: 90%;
+    height: 100%;
+    font-size: 1.2vw;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+.registerInputWrapper>input:focus{
+    border-bottom: 2px solid #FF3026;
+}
+.buttonWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.registerBtn{
+    padding: 0.8rem;
+    border: 1px solid #ff3026;
+    background-color: #ff3026;
+    color: white;
+    font-weight: 500;
+    font-size: 1vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.registerBtn:hover{
+    background-color: white;
+    color: #ff3026;
+}
+.registerLoginBtn{
+    padding: 0.8rem;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ff3026;
+    background-color: white;
+    color: #FF3026;
+    font-weight: 500;
+    font-size: 1vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.registerLoginBtn:hover{
+    background-color: #ff3026;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .registerForm{
+        width: 50vw;
+    }
+    .registerInputWrapper>input{
+        font-size: 2vw;
+    }
+    .registerBtn{
+        font-size: 2vw;
+    }
+    .registerLoginBtn{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .registerWrapper{
+        flex-direction: column;
+        padding: 2vh 7vw;
+    }
+    .registerImgContainer{
+        width: 90vw;
+        height: 40vh;
+    }
+    .registerCar{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: contain;
+    }
+    .registerBlob{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 143%;
+    }
+    .registerForm{
+        width: 90vw;
+    }
+    .registerInputWrapper>input{
+        font-size: 3vw;
+    }
+    .registerBtn{
+        font-size: 3vw;
+    }
+    .registerLoginBtn{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .registerInputWrapper>input{
+        font-size: 4vw;
+    }
+    .registerBtn{
+        font-size: 4vw;
+    }
+    .registerLoginBtn{
+        font-size: 4vw;
+    }
+}

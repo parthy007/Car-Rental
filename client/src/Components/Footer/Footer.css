@@ -1,0 +1,247 @@
+
+.footer{
+    background-color: #1D2124;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 7vw;
+}
+.footerTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 21vh;
+    width: 100%;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid gray;
+}
+.footerTopLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+}
+.footerTopLeftTitle{
+    color: white;
+    border-bottom: 2px dashed #FF3026;
+}
+.footerTopLeftDesc{
+    color: white;
+    font-size: 1.1vw;
+}
+.footerTopRight{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: 100%;
+}
+.footerTopRightWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+    height: 100%;
+}
+.footerTopRightTitle{
+    color: white;
+    font-weight: 500;
+    border-bottom: 2px dashed #FF3026;
+}
+.footerTopPageLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.link{
+    color: white;
+    font-size: 1.1vw;
+    text-decoration: none;
+}
+.footerBottom{
+    height: 21vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerBottomLeft{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.footerBottomLeftFirst{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+.footerBottomLeftTitle{
+    border-bottom: 2px dashed #ff3026;
+}
+.footerBottomLeftDesc{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.footerBottomIconWrapper{
+    width: 3vw;
+    height: 3vw;
+    background-color: #ff3026;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerBottomText{
+    font-size: 1.1vw;   
+}
+.footerBottomLeftSecond{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+.footerBottomRight{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.footerBottomRightFirst{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+.footerBottomRightTitle{
+    border-bottom: 2px dashed #ff3026;
+}
+.footerBottomRightDesc{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.footerBottomRightSecond{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.footerRights{
+    font-size: 1.1vw;
+}
+.footerRights>i{
+    color: #FF3026;
+}
+
+
+@media screen and (max-width:1000px) {
+    .footerTopLeftDesc{
+        font-size: 1.5vw;
+    }
+    .link{
+        font-size: 1.5vw;
+    }
+    .footerBottomText{
+        font-size: 1.5vw;
+    }
+    .footerRights{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        padding: 1vh 3vw;
+    }
+    .footerTopLeftDesc{
+        font-size: 2vw;
+    }
+    .footerTopRightTitle{
+        font-size: 3vw;
+    }
+    .link{
+        font-size: 2vw;
+    }
+    .footerBottomText{
+        font-size: 2vw;
+    }
+    .footerBottomLeft{
+        width: 45%;
+    }
+    .footerBottomLeftFirst{
+        width: max-content;
+    }
+    .footerBottomLeftSecond{
+        width: max-content;
+    }
+    .footerBottomRight{
+        width: 45%;
+        gap: 1rem;
+    }
+    .footerBottomRightFirst{
+        width: max-content;
+    }
+    .footerBottomRightSecond{
+        width: max-content;
+    }
+    .footerRights{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .secondTopRight{
+        display: none;
+    }
+    .footerTopLeft{
+        width: 70%;
+        justify-content: unset;
+    }
+    .footerTopRight{
+        width: 30%;
+        justify-content: center;
+    }
+    .footerTopLeftDesc{
+        font-size: 3.5vw;
+    }
+    .footerTopRightTitle{
+        font-size: 5vw;
+    }
+    .location{
+        display: none;
+    }
+    .link{
+        font-size: 3vw;
+    }
+    .footerBottomIconWrapper{
+        display: none;
+    }
+    .footerBottomLeft{
+        width: 30%;
+    }
+    .footerBottomLeftTitle{
+        font-size: 5vw;
+    }
+    .footerBottomText{
+        font-size: 3vw;
+    }
+    .footerBottomRight{
+        width: 70%;
+    }
+    .footerRights{
+        font-size: 2.2vw;
+    }
+}

@@ -1,0 +1,135 @@
+.contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contactWrapper{
+    margin-top: 8vh;
+    padding: 0 7vw;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}   
+.contactTitle{
+    border-bottom: 1px dashed #FF3026;
+}
+.contactCards{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-around;
+}
+.contactCard{
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cardImgWrapper{
+    width: 100%;
+    height: 17.5vh;
+}
+.cardTextWrapper{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1vw;
+}
+.contactCardImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.contactCardTitle{
+    font-weight: 500;
+
+}
+.contactCardDesc{
+    height: 14vh;
+    display: flex;
+    font-size: 1vw;
+    align-items: center;
+}
+.contactCardReadMore{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: #FF3026;
+    font-weight: 500;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .contactCard{
+        width: 25vw;
+    }
+    .contactCardTitle{
+        font-size: 2vw;
+    }
+    .contactCardDesc{
+        font-size: 1.5vw;
+    }
+    .contactCardReadMore{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contactWrapper{
+        padding: 0 3vw;
+    }
+    .contactCards{
+        width: 50%;
+        justify-content: space-between;
+        overflow-x: scroll;
+        gap: 6vw;
+        height: fit-content;
+    }
+    .contactCards::-webkit-scrollbar{
+        display: none;
+    }
+    .contactCard{
+        min-width: 30vw;
+    }
+    .contactCardTitle{
+        font-size: 3vw;
+    }
+    .contactCardDesc{
+        font-size: 2vw;
+    }
+    .contactCardReadMore{
+        font-size: 2vw;
+    }
+    .cardTextWrapper{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .contactWrapper{
+        padding: 0 3vw;
+    }
+    .contactCards{
+        width: 90%;
+    }
+    .contactCard{
+        min-width: 50vw;
+    }
+    .contactCardTitle{
+        font-size: 4.5vw;
+    }
+    .contactCardDesc{
+        font-size: 3.5vw;
+    }
+    .contactCardReadMore{
+        font-size: 3.5vw;
+    }
+}

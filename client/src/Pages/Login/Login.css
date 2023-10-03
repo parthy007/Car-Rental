@@ -1,0 +1,175 @@
+.login{
+    height: 100vh;
+    width: 100vw;
+}
+.loginWrapper{
+    width: 100%;
+    height: 100%;
+    padding: 0 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginImgContainer{
+    position: relative;
+    width: 50vw;
+    height: 90vh;
+    animation: move 2s infinite ease alternate;
+}
+@keyframes move {
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+        transform: translateY(0px) scale(1.03);
+    }
+}
+.loginCar{
+    width: 90%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.loginBlob{
+    position: absolute;
+    top: -10vh;
+    right: 11vw;
+    height: 120%;
+    width: 100%;
+    z-index: 1;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 30%;
+    height: 50%;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.loginTitle{
+    text-align: center;
+    color: rgb(95 85 85);
+}
+.loginInputWrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    justify-content: space-evenly;
+}
+.loginIcon{
+    color: #FF3026;
+    font-size: 1.5vw;
+}
+.loginInputWrapper>input{
+    width: 90%;
+    height: 100%;
+    font-size: 1.2vw;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+.loginInputWrapper>input:focus{
+    border-bottom: 2px solid #FF3026;
+}
+.buttonWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.loginBtn{
+    padding: 0.8rem;
+    border: 1px solid #ff3026;
+    background-color: #ff3026;
+    color: white;
+    font-weight: 500;
+    font-size: 1vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.loginBtn:hover{
+    background-color: white;
+    color: #ff3026;
+}
+.loginRegisterBtn{
+    padding: 0.8rem;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ff3026;
+    background-color: white;
+    color: #FF3026;
+    font-weight: 500;
+    font-size: 1vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.loginRegisterBtn:hover{
+    background-color: #ff3026;
+    color: white;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .loginForm{
+        width: 50vw;
+    }
+    .loginInputWrapper>input{
+        font-size: 2vw;
+    }
+    .loginBtn{
+        font-size: 2vw;
+    }
+    .loginRegisterBtn{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .loginWrapper{
+        flex-direction: column;
+        padding: 2vh 7vw;
+    }
+    .loginImgContainer{
+        width: 90vw;
+        height: 40vh;
+    }
+    .loginCar{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: contain;
+    }
+    .loginBlob{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 143%;
+    }
+    .loginForm{
+        width: 90vw;
+    }
+    .loginInputWrapper>input{
+        font-size: 3vw;
+    }
+    .loginBtn{
+        font-size: 3vw;
+    }
+    .loginRegisterBtn{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .loginInputWrapper>input{
+        font-size: 4vw;
+    }
+    .loginBtn{
+        font-size: 4vw;
+    }
+    .loginRegisterBtn{
+        font-size: 4vw;
+    }
+}

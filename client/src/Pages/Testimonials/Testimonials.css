@@ -1,0 +1,262 @@
+.testimonials{
+    height: 100vh;
+    display: flex;
+    padding: 0 7vw;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #F7F7F7;
+}
+.testimonialsWrapper{
+    height: 92vh;
+    margin-top: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.testimonialsTitle{
+    font-weight: 500;
+    font-size: 1.3vw;
+    color: #FF3026;
+}
+.cardsWrapper{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.clientCard{
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 1vh;
+    padding: .8vw;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.clientTopWrapper{
+    height: 24.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+.clientStar{
+    color: gold;
+}
+.clientText{
+    text-align: center;
+    font-size: 1vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clientName{
+    color: #FF3026;
+    font-weight: 500;
+    font-size: 1.3vw;
+}
+.clientImgWrapper{
+    width: 4vw;
+    height: 4vw;
+    padding: 4px;
+    border-radius: 50%;
+    border: 2px dashed #FF3026;
+    position: absolute;
+    bottom: -18%;
+}
+.clientImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.quotation{
+    width: 4vw;
+    position: absolute;
+    bottom: 0;
+    right: 1vw;
+}
+.quotationImg{
+    width: 100%;
+}
+.newsletterWrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 37vh;
+    background-color: #FF3026;
+    justify-content: space-around;
+}
+.newsletterLeft{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.newsletterTitle{
+    color: white;
+    width: 80%;
+}
+.inputWrapper{
+    width: 70%;
+    display: flex;
+    height: 7vh;
+    background-color: white;
+    border-radius: 7px;
+    align-items: center;
+    padding: 0.3rem;
+    gap: 0.5rem;
+}
+.clientEmail{
+    flex: 7;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 1vw;
+}
+.newsletterBtn{
+    flex: 3;
+    height: 100%;
+    border: none;
+    background-color: #FF3026;
+    color: white;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 1vw;
+    cursor: pointer;
+}
+.newsletterBtn:hover{
+    background-color: #fd554c;
+}
+.newsletterRight{
+    width: 45%;
+}
+.newsletterCar{
+    width: 100%;
+    object-fit: cover;
+    animation: moveX 2s infinite ease alternate;
+}
+@keyframes moveX {
+    from{
+        transform: translateX(-10px);
+    }
+    to{
+        transform: translateX(10px);
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .testimonialsTitle{
+        font-size: 2.3vw;
+    }
+    .clientCard{
+        width: 25vw;
+    }
+    .clientText{
+        font-size: 1.5vw;
+    }
+    .clientName{
+        font-size: 2vw;
+    }
+    .clientImgWrapper{
+        width: 7vw;
+        height: 7vw;
+        bottom: -14%;
+    }
+    .newsletterTitle{
+        width: 100%;
+    }
+    .inputWrapper{
+        width: 100%;
+    }
+    .clientEmail{
+        font-size: 1.5vw;
+    }
+    .newsletterBtn{
+        font-size: 1.5vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials{
+        padding: 0 3vw;
+    }
+    .clientCard{
+        width: 30vw;
+    }
+    .clientText{
+        font-size: 2vw;
+    }
+    .clientName{
+        font-size: 2.5vw;
+    }
+    .clientImgWrapper{
+        width: 9vw;
+        height: 9vw;
+    }
+    .newsletterWrapper{
+        flex-direction: column;
+    }
+    .newsletterLeft{
+        flex-direction: column;
+        width: 90%;
+        gap: 1rem;
+    }
+    .newsletterTitle{
+        font-size: 4vw;
+    }
+    .clientEmail{
+        font-size: 2.5vw;
+    }
+    .newsletterBtn{
+        font-size: 2vw;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .testimonialsTitle{
+        font-size: 5vw;
+    }
+    .cardsWrapper{
+        width: 90%;
+        gap: 10vw;
+        overflow-x: scroll;
+        height: 40vh;
+        margin: 0 auto;
+    }
+    .cardsWrapper::-webkit-scrollbar{
+        display: none;
+    }
+    .clientCard{
+        min-width: 50vw;
+    }
+    .clientText{
+        font-size: 3.5vw;
+    }
+    .clientName{
+        font-size: 5vw;
+    }
+    .clientImgWrapper{
+        width: 15vw;
+        height: 15vw;
+    }
+    .newsletterTitle{
+        font-size: 5vw;
+    }
+    .clientEmail{
+        font-size: 3.5vw;
+    }
+    .newsletterBtn{
+        font-size: 3vw;
+    }
+
+}

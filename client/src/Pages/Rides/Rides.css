@@ -1,0 +1,359 @@
+.rides{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 0 7vw;
+    overflow: hidden;
+}
+.ridesWrapper{
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8vh;
+    width: 100%;
+}
+.ridesLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ridesAllCards{
+    flex: 2;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cardArrowIcon{
+    display: none;
+}
+.card{
+    width: 17vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 0.5vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0,0.5) ;
+}
+.imgWrapper{
+    width: 100%;
+    background-color: #F7F7F7;
+    height: 20vh;
+}
+.car{
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.carName{
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+.priceWrapper{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    border-bottom: 1px solid rgb(225, 221, 221);
+    padding-bottom: 0.8vh;
+}
+.pricePerDay{
+    color: #FF3026;
+    font-size: 1.2vw;
+    font-weight: 500;
+    border-right: 1px solid rgb(225, 221, 221);
+    padding-right: 0.8vw;
+}
+.pricePerMonth{
+    color:gray;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.infoWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    display: flex;
+    align-items: center;
+    color: gray;
+    gap: .2vw;
+    font-size: 1vw;
+}
+.ridesRight{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    padding: 0vw 2vw;
+}
+.fleetTitle{
+    color:#FF3026;
+    font-weight: 500;
+    font-size: 1.3vw;
+}
+.buttonsWrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.ridesBtn{
+    padding: .8vw;
+    width: 7vw;
+    border-radius: 7px;
+    border: none;
+    font-size: 1vw;
+    font-weight: 500;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.ridesBtn:hover{
+    background-color: #FF3026;
+    color: white;
+}
+.ridesInputsWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vh;
+}
+.rideSelect{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1vh;
+    font-size: 1.2vw;
+}
+.rideSelect>select{
+    width: 100%;
+    height: 5vh;
+    border-radius: 7px;
+    outline: none;
+}
+.rideSelect>input{
+    width: 100%;
+    height: 5vh;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.checkBtn{
+    padding: .8vw;
+    width: 20%;
+    border-radius: 7px;
+    border: 2px solid #FF3026;
+    background-color: white;
+    color: #FF3026;
+    font-size: 1vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+.checkBtn:hover{
+    background-color: #FF3026;
+    color: white;
+}
+.rideBottomWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rideTotalPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 82%;
+    font-weight: 500;
+    padding: 0.8vw;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-size: 1vw;
+}
+.priceInfoWrapper{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.bookBtn{
+    width: 15%;
+    background-color: #FF3026;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    height: 100%;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.bookBtn:hover{
+    color: #FF3026;
+    border: 2px solid #FF3026;
+    background-color: white;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .ridesWrapper{
+        flex-direction: column;
+    }
+    .ridesLeft{
+        height: 50vh;
+        width: 100%;
+    }
+    .ridesAllCards{
+        width: 100%;
+        height: 90%;
+        align-items: center;
+        padding: 1rem;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow-x: scroll;
+        flex: none;
+        position: relative;
+    }
+    .ridesAllCards::-webkit-scrollbar{
+        display: none;
+    }
+    .card{
+        height: 100%;
+        min-width: 20vw;
+    }
+    .cardArrowIcon{
+        display: block;
+        color: #ff3026;
+    }
+    .ridesRight{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .fleetTitle{
+        font-size: 2.3vw;
+    }
+    .ridesBtn{
+        width: 8vw;
+        font-size: 1.5vw;
+    }
+    .ridesInputsWrapper{
+        flex-direction: row;
+    }
+    .rideSelect{
+        font-size: 1.5vw;
+    }
+    .checkBtn{
+        width: 35%;
+        font-size: 1.5vw;
+    }
+    .rideTotalPrice{
+        font-size: 1.5vw;
+    }
+    .bookBtn{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rides{
+        padding: 0 3vw;
+    }
+    .ridesAllCards{
+        width: 70%;
+    }
+    .card{
+        min-width: 30vw;
+    }
+    .carName{
+        font-size: 3vw;
+    }
+    .pricePerDay{
+        font-size: 2.5vw;
+    }
+    .pricePerMonth{
+        font-size: 2.5vw;
+    }
+    .info{
+        font-size: 2vw;
+    }
+    .fleetTitle{
+        font-size: 3vw;
+    }
+    .ridesBtn{
+        width: 11vw;
+        font-size: 2.5vw;
+    }
+    .rideSelect{
+        font-size: 2.5vw;
+    }
+    .checkBtn{
+        width: 60%;
+        font-size: 2.5vw;
+    }
+    .rideTotalPrice{
+        font-size: 2.5vw;
+    }
+    .bookBtn{
+        width: 16%;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ridesLeft{
+        height: 42vh;
+    }
+    .ridesAllCards{
+        width: 90%;
+    }
+    .card{
+        min-width: 50vw;
+    }
+    .carName{
+        font-size: 5vw;
+    }
+    .pricePerDay{
+        font-size: 4.5vw;
+    }
+    .pricePerMonth{
+        font-size: 4.5vw;
+    }
+    .info{
+        font-size: 3vw;
+        gap: 0.5vw;
+    }
+    .fleetTitle{
+        font-size: 5vw;
+    }
+    .ridesBtn{
+        width: 19vw;
+        font-size: 4vw;
+    }
+    .ridesInputsWrapper{
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .rideSelect{
+        font-size: 4vw;
+    }
+    .rideSelect>select{
+        height: 4vh;
+    }
+    .checkBtn{
+        width: 30%;
+        font-size: 4vw;
+    }
+    .rideTotalPrice{
+        font-size: 3.8vw;
+        width: 80%;
+        padding: 1vw;
+    }
+    .bookBtn{
+        width: 17%;
+        font-size: 4vw;
+    }
+}
