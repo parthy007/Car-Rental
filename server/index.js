@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URL)
 const PORT = process.env.PORT || 3001
 
 app.use(cors({
-    origin: ["http://localhost:3000","https://driveease.vercel.app/register"],
+    origin: ["http://localhost:3000","https://driveease.vercel.app"],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'OPTIONS', 'ORIGIN'],
     credentials: true
