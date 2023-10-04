@@ -9,8 +9,8 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar = () => {
 
-  const {dispatch} = useContext(AuthContext);
-  const [slide, setSlide] = useState(false)
+  const {dispatch} = useContext(AuthContext); // Get the logout function from the AuthContext
+  const [slide, setSlide] = useState(false) // State to control slide-in menu
 
   return (
     <div className="navbar">
@@ -19,6 +19,7 @@ const Navbar = () => {
             <h1 className="logo">DriveEase</h1>
         </div>
         <div className="navbarRight">
+            {/* Navigation links */}
             <div className="navLinks">
                 <HashLink smooth to="/#home" className="navLink">
                   <span className="links">Home</span>
@@ -36,8 +37,11 @@ const Navbar = () => {
                   <span className="links">Contact</span>
                 </HashLink>
             </div>
+
+            {/* Slide-in menu */}
             {slide && (
                 <div className="navVerticalLinks">
+                  {/* Close icon */}
                   <div className="closeIconWrapper">
                     <IconButton className="closeIcon" onClick={(e)=>setSlide(false)}>
                       <CloseIcon/>
@@ -61,10 +65,12 @@ const Navbar = () => {
                 </div>
             )}
             <div className="navbarMenuIconWrapper">
+              {/* Menu icon to trigger slide-in menu */}
               <IconButton className="navbarMenuIcon" onClick={(e)=>setSlide(true)}>
                 <MenuIcon/>
               </IconButton>
             </div>
+            {/* Logout button */}
             <button className="logoutBtn" onClick={(e)=>dispatch(logout())}>LogOut</button>
         </div>
       </div>

@@ -7,9 +7,11 @@ import { HashLink } from "react-router-hash-link";
 const Footer = () => {
   return (
     <div className="footer">
+        {/* Top section of the footer */}
         <div className="footerTop">
             <div className="footerTopLeft">
                 <h1 className="footerTopLeftTitle">DriveEase.</h1>
+                {/* Description of DriveEase */}
                 <div className="footerTopLeftDesc">
                     Discover freedom on wheels with our premier car rental service. From compact cars to spacious SUVs, we provide top-notch vehicles for your every journey. Drive with confidence and convenience!
                 </div>
@@ -19,6 +21,7 @@ const Footer = () => {
                     <h3 className="footerTopRightTitle">
                         Our Links
                     </h3>
+                    {/* Links to various sections */}
                     <div className="footerTopPageLinks">
                         <HashLink className="footerLink"  smooth to="/#home">
                             <span className="link">Home</span>
@@ -41,6 +44,8 @@ const Footer = () => {
                     <h3 className="footerTopRightTitle">
                         Other Links
                     </h3>
+
+                    {/* Links to additional pages which don't exist for now*/}
                     <div className="footerTopPageLinks">
                         <HashLink className="footerLink" >
                             <span className="link">FAQ</span>
@@ -61,6 +66,8 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+
+        {/* Bottom section of the footer */}
         <div className="footerBottom">
             <div className="footerBottomLeft">
                 <div className="footerBottomLeftFirst location">
@@ -68,7 +75,7 @@ const Footer = () => {
                         Location
                     </h3>
                     <div className="footerBottomLeftDesc">
-                
+                        {/* Location information */}
                         <div className="footerBottomIconWrapper">
                             <LocationOnIcon/>
                         </div>
@@ -83,7 +90,7 @@ const Footer = () => {
                         Mail
                     </h3>
                     <div className="footerBottomLeftDesc">
-
+                        {/* Email information */}
                         <div className="footerBottomIconWrapper">
                             <MailIcon/>
                         </div>
@@ -100,6 +107,7 @@ const Footer = () => {
                         Call
                     </h3>
                     <div className="footerBottomRightDesc">
+                        {/* Contact number */}
                         <div className="footerBottomIconWrapper">
                             <CallIcon/>
                         </div>
@@ -109,6 +117,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footerBottomRightSecond">
+                    {/* Copyright information */}
                     <h3 className="footerRights">Copyright&copy;<i>DriveEase.</i>All rights reserved.</h3>
                 </div>
             </div>
