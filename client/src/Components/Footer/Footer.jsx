@@ -20,19 +20,19 @@ const Footer = () => {
                         Our Links
                     </h3>
                     <div className="footerTopPageLinks">
-                        <HashLink smooth to="/#home">
+                        <HashLink className="footerLink"  smooth to="/#home">
                             <span className="link">Home</span>
                         </HashLink>
-                        <HashLink smooth to="/#about">
+                        <HashLink className="footerLink"  smooth to="/#about">
                             <span className="link">About</span>
                         </HashLink>
-                        <HashLink smooth to="/#fleet">
+                        <HashLink className="footerLink"  smooth to="/#fleet">
                             <span className="link">Fleet</span>
                         </HashLink>
-                        <HashLink smooth to="/#testimonials">
+                        <HashLink className="footerLink"  smooth to="/#testimonials">
                             <span className="link">Testimonials</span>
                         </HashLink>
-                        <HashLink smooth to="/#contact">
+                        <HashLink className="footerLink"  smooth to="/#contact">
                             <span className="link">Contact</span>
                         </HashLink>
                     </div>
@@ -42,19 +42,19 @@ const Footer = () => {
                         Other Links
                     </h3>
                     <div className="footerTopPageLinks">
-                        <HashLink>
+                        <HashLink className="footerLink" >
                             <span className="link">FAQ</span>
                         </HashLink>
-                        <HashLink>
+                        <HashLink className="footerLink" >
                             <span className="link">Support</span>
                         </HashLink>
-                        <HashLink>
+                        <HashLink className="footerLink" >
                             <span className="link">Privacy</span>
                         </HashLink>
-                        <HashLink>
+                        <HashLink className="footerLink" >
                             <span className="link">Terms & Conditions</span>
                         </HashLink>
-                        <HashLink>
+                        <HashLink className="footerLink" >
                             <span className="link">Gallery</span>
                         </HashLink>
                     </div>

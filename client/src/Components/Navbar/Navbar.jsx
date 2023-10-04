@@ -20,19 +20,19 @@ const Navbar = () => {
         </div>
         <div className="navbarRight">
             <div className="navLinks">
-                <HashLink smooth to="/#home">
+                <HashLink smooth to="/#home" className="navLink">
                   <span className="links">Home</span>
                 </HashLink>
-                <HashLink smooth to="/#about">
+                <HashLink smooth to="/#about"className="navLink">
                   <span className="links">About</span>
                 </HashLink>
-                <HashLink smooth to="/#fleet">
+                <HashLink smooth to="/#fleet"className="navLink">
                   <span className="links">Fleet</span>
                 </HashLink>
-                <HashLink smooth to="/#testimonials">
+                <HashLink smooth to="/#testimonials"className="navLink">
                   <span className="links">Testimonials</span>
                 </HashLink>
-                <HashLink smooth to="/#contact">
+                <HashLink smooth to="/#contact"className="navLink">
                   <span className="links">Contact</span>
                 </HashLink>
             </div>
@@ -43,19 +43,19 @@ const Navbar = () => {
                       <CloseIcon/>
                     </IconButton>
                   </div>
-                  <HashLink smooth to="/#home">
+                  <HashLink smooth to="/#home" className="navLink">
                     <span className="verticallink">Home</span>
                   </HashLink>
-                  <HashLink smooth to="/#about">
+                  <HashLink smooth to="/#about" className="navLink">
                     <span className="verticallink">About</span>
                   </HashLink>
-                  <HashLink smooth to="/#fleet">
+                  <HashLink smooth to="/#fleet" className="navLink">
                     <span className="verticallink">Fleet</span>
                   </HashLink>
-                  <HashLink smooth to="/#testimonials">
+                  <HashLink smooth to="/#testimonials" className="navLink">
                     <span className="verticallink">Testimonials</span>
                   </HashLink>
-                  <HashLink smooth to="/#contact">
+                  <HashLink smooth to="/#contact" className="navLink">
                     <span className="verticallink">Contact</span>
                   </HashLink>
                 </div>

@@ -26,6 +26,9 @@
     display: flex;
     gap: 1rem;
 }
+.navLink{
+    text-decoration: none;
+}
 .logoutBtn{
     padding: 0.5rem;
     font-weight: 500;
@@ -39,7 +42,6 @@
     background-color: #dc372e;
 }
 .links{
-    text-decoration: none;
     color: black;
 }
 .navbarMenuIconWrapper{

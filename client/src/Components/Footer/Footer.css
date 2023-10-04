@@ -54,10 +54,12 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+.footerLink{
+    text-decoration: none;
+}
 .link{
     color: white;
     font-size: 1.1vw;
-    text-decoration: none;
 }
 .footerBottom{
     height: 21vh;
